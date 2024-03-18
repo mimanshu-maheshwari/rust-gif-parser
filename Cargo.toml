@@ -1,8 +1,17 @@
 [package]
-name = "rust-gif-parser"
+name = "gif-parser"
 version = "0.1.0"
 edition = "2021"
+default-run = "decoder"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "encoder"
+path = "src/bin/encoder.rs"
+
+[[bin]]
+name = "decoder"
+path = "src/bin/decoder.rs"
 
 [dependencies]

@@ -1,0 +1,77 @@
+%%%%%%%%%%%%PREAMBLE%%%%%%%%%%%%
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+%\usepackage{amsthm}
+%\usepackage{float}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage[margin=1in]{geometry}
+%\usepackage{pgfplot}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+
+\title{GIF Encoder and Decoder \\ \large{Notes}}
+\author{Mimanshu Maheshwari}
+
+\pagestyle{fancy}
+\fancyhead[l]{Mimanshu Maheshwari}
+\fancyhead[r]{\today}
+\fancyhead[c]{\thepage}
+\fancyfoot[l]{Mimanshu Maheshwari}
+\fancyfoot[r]{\today}
+\fancyfoot[c]{\thepage}
+\renewcommand{\headrulewidth}{0.2pt}
+\setlength{\headheight}{15pt}
+
+
+%%%%%%%%%%%%END%%%%%%%%%%%%
+
+
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+%\listoftables
+
+\chapter{GIF}
+\section{Introduction}
+Graphics Interchange Format (GIF) is a standard defining a mechanism for the storage and transmission of the storage and transmission of raster-based graphics information made in June 15, 1987 by CompuServe Incorporated. 
+
+\chapter{GIF87a}
+
+\section{General file Format}
+
+\begin{table}[h]
+	\begin{tabular}{|l|l|}
+		\hline
+		\textbf{Field} & \textbf{Repeat value} \\\hline 
+		Gif Signature & No repeat \\ \hline
+		Screen Descriptor & No repeat  \\ \hline
+		Global Color Map &  No repeat \\ \hline
+		Image Descriptor & repeated 1 to n times \\ \hline
+		Local Color Map  & repeated 1 to n times \\ \hline
+		Raster Data  & repeated 1 to n times \\ \hline
+		Gif Terminator &  No repeat \\ \hline
+	\end{tabular}
+\end{table}
+
+\section{Gif Signature}
+Gif Signature consist of 
+\section{Screen Descriptor}
+\section{Global Color Map}
+\section{Image Descriptor}
+\section{Local Color Map}
+\section{Raster Data}
+\section{Gif Terminator}
+
+\chapter{GIF89a}
+
+\appendix
+
+\end{document}
